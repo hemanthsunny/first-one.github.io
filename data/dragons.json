@@ -1,0 +1,28 @@
+[{
+	"name":"Yoshi",
+	"color":"orange",
+	"rate":80,
+	"available":true,
+	"thumb":"content/imgs/1-fa.png"
+},
+{
+	"name":"Shaun",
+	"color":"red",
+	"rate":300,
+	"available":true,
+	"thumb":"content/imgs/2-tw.png"
+},
+{
+	"name":"Ryu",
+	"color":"pink",
+	"rate":102.58,
+	"available":true,
+	"thumb":"content/imgs/3-li.png"
+},
+{
+	"name":"Crystal",
+	"color":"green",
+	"rate":35558.02,
+	"available":true,
+	"thumb":"content/imgs/4-in.png"
+}]

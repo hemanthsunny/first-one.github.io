@@ -1,0 +1,17 @@
+<div class="content">
+	<form name="contactForm" novalidate ng-submit="sendMessage()">
+		<input type="text" name="name" placeholder="name" ng-model="contact.name" ng-required="true">
+		<div ng-show="contactForm.name.$touched && contactForm.name.$invalid">
+			<small style="display:block; color: red; padding: 0 10%;">Enter a valid name</small>
+		</div>
+		<input type="email" name="email" placeholder="email" ng-model="contact.email" ng-required="true" ng-pattern="/^([a-zA-Z0-9]+)@([a-zA-Z0-9]+).([a-zA-Z]+)$/">
+		<div ng-show="contactForm.email.$touched && contactForm.email.$invalid">
+			<small style="display:block; color: red; padding: 0 10%;">Enter a valid email</small>
+		</div>
+		<textarea name="message" placeholder="message" ng-model="contact.message" ng-required="true"></textarea>
+		<div ng-show="contactForm.message.$touched && contactForm.message.$invalid">
+			<small style="display:block; color: red; padding: 0 10%;">Enter a message</small>
+		</div>
+		<input type="submit" value="send" ng-disabled="contactForm.$invalid">
+	</form>
+</div>

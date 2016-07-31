@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html ng-app="apps">
+<head>
+	<title>Index</title>
+	<link rel="stylesheet" type="text/css" href="content/css/style.css">
+	<script type="text/javascript" src="app/lib/angular.min.js"></script>
+	<script type="text/javascript" src="app/lib/angular-animate.min.js"></script>
+	<script type="text/javascript" src="app/lib/router.js"></script>
+</head>
+<body>
+	<base href="/">
+	<header ng-include="'header.html'"></header>
+	<main ng-view></main>
+	<script type="text/javascript" src="content/js/app.js"></script>
+</body>
+</html>
+<!--
+<!DOCTYPE html>
+<html ng-app="apps">
+<head>
+	<title>Index</title>
+	<link rel="stylesheet" type="text/css" href="content/css/style.css">
+	<script type="text/javascript" src="app/lib/angular.min.js"></script>
+</head>
+<body ng-controller="controls">
+	<input type="text" ng-model="favMeat">
+	this is {{favMeat}}.
+	<div ng-init="numbers=[1,2,3,4,5]">
+		I got {{numbers[0] + numbers[favMeat] * numbers[3]}}
+	</div>
+	<div ng-init="meats = ['pork','ham','beef'];colr=['orange','red','green','blue','pink']">
+		<p>{{meats[1]}}</p>
+	</div>
+	0.Orange 1.Red 2.Green 3.Blue 4.Pink
+	<input type="text" name="" ng-model="favColor">
+	<h1 class="{{colr[favColor]}}">{{meats[2]}}</h1>
+	<div>
+		I have following colors in array list:
+		<ul>
+			<li>{{colr}}</li>
+		</ul>
+		I have following colors in list:
+		<ul>
+			<li ng-repeat="colorName in colr">{{colorName}}</li>
+		</ul>
+	</div>
+
+<script type="text/javascript" src="content/js/app.js"></script>
+</body>
+</html>
+-->

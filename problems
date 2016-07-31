@@ -1,0 +1,3 @@
+Ninja Problems:
+1.) When a new controller is created, $scope error is arising.
+2.) Data in the directory page is loaded 2 times unknownly.

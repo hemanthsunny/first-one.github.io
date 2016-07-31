@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html ng-app="practiceApp">
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="content/css/style.css">
+	<script type="text/javascript" src="app/lib/angular.min.js"></script>
+	<script type="text/javascript" src="app/lib/router.js"></script>
+</head>
+<body ng-controller="practiceController">
+<random-dragon ></random-dragon>
+<script type="text/javascript">
+	var app = angular.module("practiceApp",[]);
+
+	app.controller("practiceController",function($scope){
+
+	});
+	app.directive("randomDragon",function(){
+		return {
+			restrict: 'E',
+			scope: {
+				modal: '='
+			},
+			templateUrl: 'index.html'
+		};
+	});
+</script>
+</body>
+</html>

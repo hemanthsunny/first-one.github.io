@@ -1,0 +1,139 @@
+.orange{
+	color: orange;
+	background-color: orange;	
+}
+.red{
+	color: red;
+	background-color: red;
+}
+.pink{
+	color: pink;
+	background-color: pink;
+}
+.blue{
+	color: blue;
+	background-color: blue;
+}
+.green{
+	color: green;
+	background-color: green;
+}
+.belt{
+	color: white;
+	padding: 3px 8px;
+	border-radius: 3px;
+}
+body{
+	margin: 0px;
+}
+#menu-bar{
+	background-color: crimson;
+	color: white;
+	padding: 10px;
+	min-height: 40px;
+}
+#menu-bar h1{
+	float: left;
+	font-size: 19px;
+}
+#menu-bar ul{
+}
+#menu-bar li{
+	vertical-align: middle;
+	display: inline-block;
+	list-style: none;
+	float: right;	
+}
+#menu-bar li a{
+	padding: 10px;
+	color: #fff;
+}
+
+.content{
+	margin: 40px;
+	width: 80%;
+}
+.content button:nth-child(1){
+	float: left;
+}
+.content button:nth-child(2){
+	float: right;
+}
+.content span{
+	float: right;
+}
+.remove{
+	color: red;
+	float: right;
+	cursor: pointer;
+	position: relative;
+}
+.content ul li{
+	list-style: none;
+	padding: 15px 10px;
+	border-top: 2px solid grey;
+	width: 80%;
+	margin-left: 8%;
+}
+.content ul li a{
+}
+.content input[type="text"],.content form input[type="email"],.content form textarea{
+	border-radius: 5px;
+	width: 80%;
+	padding: 10px 14px;
+	font-size: 15px;
+	margin: 10px 9.5%;
+}
+.content form input[type="submit"]{
+	display: block;
+	margin-left: 42%;
+	padding: 10px;
+	text-align: center;
+}
+.content{
+	background-color: lightgrey;
+	overflow: hidden;
+}
+main.ng-enter{
+	opacity: 0;
+	transition: all linear .3s;
+}
+main.ng-enter.ng-enter-active{
+	opacity: 1
+}
+#dragon-list li.ng-enter{
+	opacity: 0;
+	transition: all linear .2s;
+	transform: translateY(26px);
+}
+#dragon-list li.ng-enter.ng-enter-active{
+	opacity: 1;
+	transform: translateY(0px);
+}
+#dragon-list li.ng-leave{
+	opacity: 1;
+	transition: all linear .2s;
+	transform: translateX(0);
+}
+#dragon-list li.ng-leave.ng-leave-active{
+	opacity: 0;
+	transform: translateX(-100%);
+}
+#dragon-list li.ng-leave-stagger{
+	transition-delay: 0.2s;
+	transition-duration: 0;
+}
+
+input.ng-invalid.ng-touched, textarea.ng-invalid.ng-touched{
+	border: 2px solid red;
+}
+input[disabled="disabled"]{
+	cursor: not-allowed;
+}
+input[disabled="undisabled"]{
+	cursor: crosshair;
+}
+/*home*/
+.content h1{
+	text-align: center;
+}

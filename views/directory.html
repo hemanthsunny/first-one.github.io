@@ -1,0 +1,23 @@
+	<div class="content">
+	 <div ng-controller="controls">
+	 	<button ng-click="order = 'name'">Order by name</button>
+	 	<button ng-click="order = 'color'">Order by color</button>
+		<input type="text" name="" ng-model="search" placeholder="Search for a dragon..">
+		<ul id="dragon-list">
+			<li ng-repeat="names in colors | orderBy : order | filter : search : false " ng-show="names.available">
+			<img ng-src="{{names.thumb}}" style="margin: -5px 10px; width: 20px;" alt="XX{{names.name}}XX">
+			{{names.name}} - {{names.color}} - {{names.rate | currency : '&#8357;':3}}
+			<div class="remove" ng-click="removeItem(names)">&nbsp;x</div>
+			<span class="belt" style="background: {{names.color}}">{{names.color}} belt</span>
+			</li>
+			<!--<li>{{colors | json : 50}}</li>-->
+		</ul>
+		<form ng-submit="addItem()">
+			<input type="text" name="" ng-model="newdragon.name" placeholder="name">
+			<input type="text" name="" ng-model="newdragon.belt" placeholder="belt">
+			<input type="text" name="" ng-model="newdragon.rate" placeholder="rate">
+			<input type="submit" name="" value="Add new dragon">
+		</form>
+		<a href="" ng-click="removeAll()" style="font-size: 14px;">Remove all dragons</a>
+	 </div>
+	</div>
